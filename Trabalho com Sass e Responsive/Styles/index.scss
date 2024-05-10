@@ -1,0 +1,397 @@
+@import './colors';
+@import './mixin';
+@import './header';
+@import './Corpo';
+@import './footer';
+
+html{  
+
+    height: 100%;
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: 'rubik';
+    background-color: $fundo;
+
+    
+}
+
+.main {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+/*Botão registro e waitlist*/
+.Register_1 {
+    background: $amarelo;
+    color: $fundo;
+    border-radius: 50px;
+    border: 0px;
+    cursor: pointer;
+
+    width: 178px;
+    height: 58px;
+
+    font-weight: bold;
+    font-size: 16px;
+    order: 3;
+} 
+.Register_2 {
+    background: $amarelo;
+    color: $fundo;
+    border-radius: 50px;
+    border: 0px;
+    cursor: pointer;
+
+    width: 178px;
+    height: 58px;
+
+    font-weight: bold;
+    font-size: 16px;
+    order: 3;
+} 
+.Register_3 {
+    background: $amarelo;
+    color: $fundo;
+    border-radius: 50px;
+    border: 0px;
+    cursor: pointer;
+
+    width: 178px;
+    height: 58px;
+
+    font-weight: bold;
+    font-size: 16px;
+    order: 3;
+} 
+/* Entrada E-mail */
+.input {
+    width: 384px;
+    height: 58px;
+    
+    background-color: transparent;
+    border-radius: 50px;
+    border: 1px $borda solid;
+    padding-left: 32px;
+    
+
+    font-size: 16px;
+    text-align: start;
+    color: $borda;
+
+}
+/* Texto grande cima */
+h2 {
+    width: 100%;
+
+    color: $amarelo;
+    font-size: 64px;
+    text-align: center;
+
+    @include Flex_row;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    height: 228px;
+    width: 845px;
+
+}
+/* Texto grande baixo */
+h1 {
+    color: $amarelo;
+    font-size: 63px;
+    text-align: center;
+    
+    
+    @include Flex_row;
+
+    margin-top: 102px;
+
+    width: 390px;
+    height: 76px;
+
+}
+
+        /* Estilo do balão de mensagem */
+#balao-mensagem {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    
+    background-color: $fundo;
+    color: $amarelo;    
+    border: 1px $borda solid;
+    border-radius: 10px;
+    
+    z-index: 1000; 
+    font-size: 32px;
+    
+}
+
+
+
+/* Iphone 13 & 14-1 */
+@media screen and (min-width: 390px) and (max-width: 1024px){
+    html{
+        width: 100%;
+        margin: 0px auto;
+    }  
+    body {
+        margin-left: 19px;
+        margin-right: 19px;
+        margin-top: 38px;
+
+        width: 352px;
+        height: 2475px;      
+    }
+    /* Somente Header */  
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 64px;
+    }  
+    .meio {
+        display: none;
+    }
+    .Register_1{
+        display: none;
+    }
+    /* Somente Cabeça parte 1 */
+    
+    .cabeca{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 38px;
+        gap: 56px;
+
+
+        width: 352px;
+        height: 463px;
+    }
+    .h2 h2 {
+        width: 100%;
+
+        color: $amarelo;
+        font-size: 32px;
+        text-align: center;       
+       
+        height: 152px;
+        width: 334px;
+        
+        margin-top: 0px;
+        margin-bottom: 0px;                  
+    }
+    .suporte{ 
+        color: $borda;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: auto;
+        height: 64px;
+    }   
+    .suporte p {         
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+    .email {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        
+        margin-bottom: 0px; 
+        margin-top: 0px; 
+
+        width: 352px;
+        height: 128px;
+        align-items: center;
+    }
+    .input {
+        width: 351px;
+        height: 58px;
+        
+        background-color: transparent;
+        border-radius: 50px;
+        border: 1px $borda solid;
+        padding-left: 0px;
+        padding-right: 0px;       
+    
+        font-size: 16px;
+        text-align: start;
+        color: $borda;           
+    }
+    .Register_2 {
+        background: $amarelo;
+        color: $fundo;
+        border-radius: 50px;
+        border: 0px;
+        cursor: pointer;
+    
+        width: 351px;
+        height: 58px;
+    
+        font-weight: bold;
+        font-size: 16px;
+
+        padding: 0px;
+    } 
+    /* Somente Corpo parte 1 */
+    .torso{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        width: 270px;
+        height: 1534px;
+
+        gap: 56px;
+
+        margin-bottom: 56px;
+    }
+    .caixas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: space-around;
+        
+        width: 270px;
+        height: 1186px;
+        gap: 33px;
+       
+    }
+    /* remoção e adição de nova imagem no corpo */
+    .img_1{
+        width: 270px;
+        height: 292px;
+    }
+    .img_2{
+        width: 24px;
+        height: 24px;
+    }
+    /* Somente Pezinho */
+    .h1 h1 {
+        width: 100%;
+
+        color: $amarelo;
+        font-size: 32px;
+        text-align: center;       
+       
+        width: auto;
+        height: 38px;
+        
+        margin-top: 0px;
+        margin-bottom: 32px;                  
+    }
+    .Register_3 {
+        background: $amarelo;
+        color: $fundo;
+        border-radius: 50px;
+        border: 0px;
+        cursor: pointer;
+    
+        width: 351px;
+        height: 58px;
+    
+        font-weight: bold;
+        font-size: 16px;
+
+        padding: 0px;
+    }
+    .pezinho {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 352px;
+        height: 202px;
+
+        margin-bottom: 49px;
+    }
+    footer {  
+
+        border-top: 2px #7D7D7D solid;
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 0px;
+        margin-bottom: 32px;
+        gap: 10px;
+
+        justify-content: center;
+        align-items: center;
+             
+    }
+    
+    .nomes {
+        color: $borda;
+        font-size: 16px;
+    }
+
+}
+
+/* Ipad Pro 12.9"-1 */
+@media screen and (min-width: 1024px) and (max-width: 1440px){
+    html{      
+        width: 100%;
+        margin: 0px auto;           
+    }   
+    body {
+        margin-left: 111px;
+        margin-right: 111px;
+        margin-top: 40px;
+
+        background-image: url('/Img/Vector.svg');      
+        background-position: center;
+        background-repeat: no-repeat;
+    } 
+    
+    .torso {
+        width: 928px;
+        height: 772px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+
+        margin-bottom: 100px;
+    }
+    .caixas {
+        width: 928px;
+        height: 289px;
+        display: flex;
+        flex-direction: row;
+        align-content: space-around;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .caixa {
+        width: 221px;
+        height: 289px;
+    }
+}
+
+/* Pc */
+@media screen and (min-width: 1440px) and (max-width: 1920px){
+    html{
+        width: 100%;
+        margin: 0px auto;
+    }
+    body {
+        margin-left: 352px;
+        margin-right: 352px;
+        margin-top: 52px;
+    } 
+}

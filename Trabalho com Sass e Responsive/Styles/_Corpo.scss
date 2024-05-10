@@ -1,0 +1,101 @@
+
+body{
+    column-gap: 32px;
+}
+
+.corpo{
+    @include Flex_column;
+}
+
+.torso {
+    width: 1216px;
+    height: 640px;
+    @include flex_row_center;
+   
+}
+
+.caixas {
+    width: 572px;
+    height: 580px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.caixa {
+    width: 265px;
+    height: 268px;
+    background: $branco;
+    border-radius: 10px;
+}
+
+.caixinha{
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 40px;    
+
+}
+
+/* Texto grande blocos */
+.caixas h4 {
+    color: $marron;
+    font-size: 16px;
+    text-align:start;        
+
+}
+/* Texto pequeno blocos */
+.caixas p {
+    color: $bege;
+    font-size: 16px;
+    text-align:start;  
+}
+
+/* Inicio Main */
+
+.cabeca{   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    
+    gap: 56px;
+
+    width: 845px;
+    height: 445px;
+
+}
+.suporte{ 
+    color: $borda;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;       
+    
+    width: 439px;
+    height: 24px;
+  
+}
+
+.suporte p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-right: 32px; 
+    cursor: pointer;   
+}
+
+.email {
+    @include flex_row_center;
+    gap: 30px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.pezinho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,16 @@
+/* Pés da guia */
+footer {  
+
+    border-top: 3px $borda solid; 
+
+    @include flex_row_center;
+
+    margin-top: 100px;
+    gap: 32px;
+  
+}
+
+.nomes {
+    color: $borda;
+    font-size: 16px;
+}

@@ -1,0 +1,33 @@
+header{
+    @include Flex_row_center_space-between;
+}
+
+/* Logo */
+.logo {
+    max-width: 200px;
+    max-height: 70px;
+    order: 1;
+}
+/*informações Meio*/
+.meio {
+    
+    text-align: center;
+    row-gap: 32px;
+
+    flex-grow: 1;
+    gap: 64px;
+    order: 2;
+    
+    color: $branco;
+    font-size: 16px;
+}
+
+.meio a {
+    margin-right: 32px; 
+}
+
+a {
+    color: $branco;
+    text-decoration: none;
+
+}
